@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hive_database/src/UI/hive_database/hive_database.dart';
+import 'package:hive_database/src/UI/student_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -16,7 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
    {
     // do something
 
-    Navigator.push(context, MaterialPageRoute(builder: (context)=>const HiveDatabaseScreen()));
+    Navigator.push(context, MaterialPageRoute(builder: (context)=>const StudentScreen()));
 
    });
     
