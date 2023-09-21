@@ -9,23 +9,20 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
-
   @override
   void didChangeDependencies() {
-   Future.delayed(const Duration(seconds: 3),()
-   {
-    // do something
+    Future.delayed(const Duration(seconds: 3), () {
+      // do something
 
-    Navigator.push(context, MaterialPageRoute(builder: (context)=>const StudentScreen()));
-
-   });
-    
-    
+      Navigator.push(context,
+          MaterialPageRoute(builder: (context) => const StudentScreen()));
+    });
   }
+
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Center(child:CircularProgressIndicator()),
+      body: Center(child: CircularProgressIndicator()),
     );
   }
 }

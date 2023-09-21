@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:hive/hive.dart';
 import 'package:hive_database/src/core/models/student_model.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
@@ -100,7 +99,9 @@ class _StudentScreenState extends State<StudentScreen> {
                             style: TextStyle(color: Colors.white),
                           ),
                           onPressed: () async {
-                             var student=await Hive.openBox<StudentModel>("student");
+                             var student=Hive.box<StudentModel>("student");
+
+                            //  print(student.na)
 
                             String name = nameController.text.trim().toString();
                             String fname = fnameController.text.trim().toString();

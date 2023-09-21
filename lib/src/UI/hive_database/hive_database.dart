@@ -99,6 +99,7 @@ class _HiveDatabaseScreenState extends State<HiveDatabaseScreen> {
         },
         child: const Icon(Icons.add),
       ),
+   
     );
   }
 }
